@@ -1,0 +1,98 @@
+* {
+    user-select: none;
+    font-family: tahoma;
+    color: black;
+}
+
+h1 {color: white;}
+
+body {
+    background: linear-gradient(blue,red);
+    background-size: 1000px 1000px;
+    background-position: fixed;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#topnav {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#topnav > button {
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size:20px;
+    color: white;
+}
+
+#topnav > button:focus, input:focus {outline: none;}
+
+#topnav > button:hover, td:hover, #tool > i:hover {cursor: pointer;}
+
+#overviewdiv {
+    display: none;
+    overflow:scroll;
+}
+
+#editdiv {display:block;}
+
+th, td {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+table {overflow-x: scroll;}
+
+@media only screen and (max-width: 800px) {
+    .page {width: 70%;}
+}
+
+@media only screen and (min-width: 800px) {
+    .page {width: 50%;}
+}
+
+@media only screen and (min-width: 1200px) {
+    .page {width: 30%;}
+}
+
+.page {
+    border-radius: 10px;
+    padding:20px;
+    margin: auto;
+    background-color: white;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid black;
+    height: 20px;
+    width: 50%;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+#tool {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#tool > i, i {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#tool > i:hover {background-color:gainsboro;}
+
+#create, #noverview, #generalwarning {
+    margin:20px;
+    display:none;
+}

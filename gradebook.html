@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gradebook</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="gradebook.css">
+    </head>
+    <body>
+        <br><center><h1>Grades</h1></center>
+        <nav id="topnav">
+            <button id="overview-btn">Overview</button>
+            <button id="edit-btn">Edit</button>
+        </nav><br><br>
+        <div id="editdiv" class="page">
+            <div id="tool">
+                <i class="fa-solid fa-plus" id="addnew"></i>&nbsp;
+                <i class="fa-solid fa-save" id="save"></i>&nbsp;
+                <i class="fa-solid fa-trash" id="remove"></i>
+            </div>
+            <center id="create">
+                <i class="fa-solid fa-warning"></i><br>
+                There isn't any data on your grades. You may enter them using the plus button up top.
+            </center>
+            <div id="inputdiv"></div>
+            <center id="generalwarning">
+                <i class="fa-solid fa-warning"></i><br>
+                Please check your input information. Make sure your grades are separated by commas. Make sure that both your grades and subject name do not contain any odd symbols.
+            </center>
+        </div>
+        <div id="overviewdiv" class="page">
+            <center id="noverview">
+                <i class="fa-solid fa-warning"></i><br>
+                There isn't any data on your grades. Go to the edit section to add some.
+            </center>
+            <center id="resultcenter">
+                <table id="resulttable">
+                    <tr id="headings">
+                        <th><strong>Subject</strong></th>
+                        <th><strong>Average</strong></th>
+                        <th><strong>Highest</strong></th>
+                        <th><strong>Lowest</strong></th>
+                        <th><strong>Grade</strong></th>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <script src="gradebook.js"></script>
+    </body>
+</html>
